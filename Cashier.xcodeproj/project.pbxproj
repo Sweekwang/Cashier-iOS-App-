@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2053980F285B798700A63326 /* FoodSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2053980E285B798700A63326 /* FoodSetting.swift */; };
+		20539812285B7C9400A63326 /* TextTrailingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20539811285B7C9400A63326 /* TextTrailingButton.swift */; };
 		2066E96C2859CC6A00097607 /* CashierApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066E96B2859CC6A00097607 /* CashierApp.swift */; };
 		2066E96E2859CC6A00097607 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066E96D2859CC6A00097607 /* ContentView.swift */; };
 		2066E9702859CC6A00097607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2066E96F2859CC6A00097607 /* Assets.xcassets */; };
 		2066E9732859CC6A00097607 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2066E9722859CC6A00097607 /* Preview Assets.xcassets */; };
 		2066E9752859CC6A00097607 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066E9742859CC6A00097607 /* Persistence.swift */; };
 		2066E9782859CC6A00097607 /* Cashier.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2066E9762859CC6A00097607 /* Cashier.xcdatamodeld */; };
+		2066E9812859D06A00097607 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066E9802859D06A00097607 /* Main.swift */; };
+		2066E9842859D94800097607 /* AddOnItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066E9832859D94800097607 /* AddOnItem.swift */; };
+		2066E9862859D9A200097607 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066E9852859D9A200097607 /* Food.swift */; };
+		2066E9882859D9ED00097607 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066E9872859D9ED00097607 /* Order.swift */; };
+		2066E98D2859DCAD00097607 /* EarningSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066E98C2859DCAD00097607 /* EarningSummary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2053980E285B798700A63326 /* FoodSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSetting.swift; sourceTree = "<group>"; };
+		20539811285B7C9400A63326 /* TextTrailingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTrailingButton.swift; sourceTree = "<group>"; };
 		2066E9682859CC6A00097607 /* Cashier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cashier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2066E96B2859CC6A00097607 /* CashierApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashierApp.swift; sourceTree = "<group>"; };
 		2066E96D2859CC6A00097607 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +32,11 @@
 		2066E9722859CC6A00097607 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2066E9742859CC6A00097607 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		2066E9772859CC6A00097607 /* Cashier.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cashier.xcdatamodel; sourceTree = "<group>"; };
+		2066E9802859D06A00097607 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		2066E9832859D94800097607 /* AddOnItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOnItem.swift; sourceTree = "<group>"; };
+		2066E9852859D9A200097607 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		2066E9872859D9ED00097607 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		2066E98C2859DCAD00097607 /* EarningSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningSummary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2053980D285B797300A63326 /* FoodSetting */ = {
+			isa = PBXGroup;
+			children = (
+				20539810285B7C7F00A63326 /* View */,
+				2053980E285B798700A63326 /* FoodSetting.swift */,
+			);
+			path = FoodSetting;
+			sourceTree = "<group>";
+		};
+		20539810285B7C7F00A63326 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20539811285B7C9400A63326 /* TextTrailingButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2066E95F2859CC6A00097607 = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +86,11 @@
 		2066E96A2859CC6A00097607 /* Cashier */ = {
 			isa = PBXGroup;
 			children = (
+				2066E97F2859D03000097607 /* API */,
+				2066E9822859D92E00097607 /* Model Facade */,
+				2066E97E2859D02800097607 /* Screen */,
 				2066E96B2859CC6A00097607 /* CashierApp.swift */,
-				2066E96D2859CC6A00097607 /* ContentView.swift */,
 				2066E96F2859CC6A00097607 /* Assets.xcassets */,
-				2066E9742859CC6A00097607 /* Persistence.swift */,
 				2066E9762859CC6A00097607 /* Cashier.xcdatamodeld */,
 				2066E9712859CC6A00097607 /* Preview Content */,
 			);
@@ -71,6 +103,51 @@
 				2066E9722859CC6A00097607 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2066E97E2859D02800097607 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				2053980D285B797300A63326 /* FoodSetting */,
+				2066E98A2859DC6D00097607 /* Home */,
+				2066E9802859D06A00097607 /* Main.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		2066E97F2859D03000097607 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2066E96D2859CC6A00097607 /* ContentView.swift */,
+				2066E9742859CC6A00097607 /* Persistence.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		2066E9822859D92E00097607 /* Model Facade */ = {
+			isa = PBXGroup;
+			children = (
+				2066E9892859DA3D00097607 /* OrderFacade */,
+				2066E98C2859DCAD00097607 /* EarningSummary.swift */,
+			);
+			path = "Model Facade";
+			sourceTree = "<group>";
+		};
+		2066E9892859DA3D00097607 /* OrderFacade */ = {
+			isa = PBXGroup;
+			children = (
+				2066E9832859D94800097607 /* AddOnItem.swift */,
+				2066E9852859D9A200097607 /* Food.swift */,
+				2066E9872859D9ED00097607 /* Order.swift */,
+			);
+			path = OrderFacade;
+			sourceTree = "<group>";
+		};
+		2066E98A2859DC6D00097607 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +220,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2066E9862859D9A200097607 /* Food.swift in Sources */,
+				2066E9812859D06A00097607 /* Main.swift in Sources */,
+				2066E9882859D9ED00097607 /* Order.swift in Sources */,
 				2066E9752859CC6A00097607 /* Persistence.swift in Sources */,
 				2066E96E2859CC6A00097607 /* ContentView.swift in Sources */,
 				2066E96C2859CC6A00097607 /* CashierApp.swift in Sources */,
+				2053980F285B798700A63326 /* FoodSetting.swift in Sources */,
+				2066E9842859D94800097607 /* AddOnItem.swift in Sources */,
+				2066E98D2859DCAD00097607 /* EarningSummary.swift in Sources */,
 				2066E9782859CC6A00097607 /* Cashier.xcdatamodeld in Sources */,
+				20539812285B7C9400A63326 /* TextTrailingButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
