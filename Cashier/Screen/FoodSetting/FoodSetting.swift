@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct FoodSetting: View {
+    @State var showAddMain = false
+    @State var showAddAddOns = false
+    var viewmodel = FoodSettingViewModel()
+    
     var body: some View {
         NavigationView {
             List {
@@ -16,7 +20,8 @@ struct FoodSetting: View {
                     Text("TEST")
                         .listRowSeparator(.hidden)
                 } header: {
-                    TextTrailingButton(title: "Main", action: {})
+                    TextTrailingButton(title: "Main",
+                                       action: { showAddMain.toggle() })
                 }
 
                 // MARK: - Add ons Section
@@ -24,7 +29,7 @@ struct FoodSetting: View {
                     Text("TEST")
                         .listRowSeparator(.hidden)
                 } header: {
-                    TextTrailingButton(title: "Add Ons", action: {})
+                    TextTrailingButton(title: "Add Ons", action: { showAddAddOns.toggle() })
                 }
             } //: List
             
@@ -32,6 +37,9 @@ struct FoodSetting: View {
             .listStyle(.plain)
             
         } //: NavigationView
+        .fullScreenCover(isPresented: $showAddMain,
+                         content: { AddFood(title: "Add Mains", action: { viewmodel.addMains(name: "Test", price: "12.00") }) } )
+        .fullScreenCover(isPresented: $showAddAddOns, content: { AddFood(title: "Add Add On", action: { }) } )
     }
 }
 

@@ -13,7 +13,7 @@ struct TextTrailingButton: View {
     
     var body: some View {
         HStack {
-            Text("Mains".capitalized)
+            Text(title.capitalized)
                 .font(.title3)
                 .fontWeight(.medium)
                 .textCase(nil)

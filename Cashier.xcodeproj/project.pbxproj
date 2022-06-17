@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		2053980F285B798700A63326 /* FoodSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2053980E285B798700A63326 /* FoodSetting.swift */; };
 		20539812285B7C9400A63326 /* TextTrailingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20539811285B7C9400A63326 /* TextTrailingButton.swift */; };
+		20539816285B7DB400A63326 /* AddFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20539815285B7DB400A63326 /* AddFood.swift */; };
+		20539819285B7E1700A63326 /* RUIFilledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20539818285B7E1700A63326 /* RUIFilledTextField.swift */; };
+		2053981C285B7F2B00A63326 /* TextTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2053981B285B7F2B00A63326 /* TextTextField.swift */; };
+		2053981E285B7FDE00A63326 /* RUIRoundedCornerTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2053981D285B7FDE00A63326 /* RUIRoundedCornerTextButton.swift */; };
 		2066E96C2859CC6A00097607 /* CashierApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066E96B2859CC6A00097607 /* CashierApp.swift */; };
 		2066E96E2859CC6A00097607 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066E96D2859CC6A00097607 /* ContentView.swift */; };
 		2066E9702859CC6A00097607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2066E96F2859CC6A00097607 /* Assets.xcassets */; };
@@ -20,11 +24,21 @@
 		2066E9862859D9A200097607 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066E9852859D9A200097607 /* Food.swift */; };
 		2066E9882859D9ED00097607 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066E9872859D9ED00097607 /* Order.swift */; };
 		2066E98D2859DCAD00097607 /* EarningSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066E98C2859DCAD00097607 /* EarningSummary.swift */; };
+		20A2372F285CD5ED004D7301 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20A2372E285CD5ED004D7301 /* GoogleService-Info.plist */; };
+		20A23732285CD652004D7301 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 20A23731285CD652004D7301 /* FirebaseAuth */; };
+		20A23734285CD652004D7301 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 20A23733285CD652004D7301 /* FirebaseFirestore */; };
+		20A23737285CD6B0004D7301 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A23736285CD6B0004D7301 /* AppDelegate.swift */; };
+		20A23739285CD7E0004D7301 /* FirestoreReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A23738285CD7E0004D7301 /* FirestoreReference.swift */; };
+		20A2373B285CD8D6004D7301 /* FoodSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A2373A285CD8D6004D7301 /* FoodSettingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2053980E285B798700A63326 /* FoodSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSetting.swift; sourceTree = "<group>"; };
 		20539811285B7C9400A63326 /* TextTrailingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTrailingButton.swift; sourceTree = "<group>"; };
+		20539815285B7DB400A63326 /* AddFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFood.swift; sourceTree = "<group>"; };
+		20539818285B7E1700A63326 /* RUIFilledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUIFilledTextField.swift; sourceTree = "<group>"; };
+		2053981B285B7F2B00A63326 /* TextTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTextField.swift; sourceTree = "<group>"; };
+		2053981D285B7FDE00A63326 /* RUIRoundedCornerTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUIRoundedCornerTextButton.swift; sourceTree = "<group>"; };
 		2066E9682859CC6A00097607 /* Cashier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cashier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2066E96B2859CC6A00097607 /* CashierApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashierApp.swift; sourceTree = "<group>"; };
 		2066E96D2859CC6A00097607 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +51,10 @@
 		2066E9852859D9A200097607 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		2066E9872859D9ED00097607 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		2066E98C2859DCAD00097607 /* EarningSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningSummary.swift; sourceTree = "<group>"; };
+		20A2372E285CD5ED004D7301 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		20A23736285CD6B0004D7301 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20A23738285CD7E0004D7301 /* FirestoreReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreReference.swift; sourceTree = "<group>"; };
+		20A2373A285CD8D6004D7301 /* FoodSettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSettingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20A23732285CD652004D7301 /* FirebaseAuth in Frameworks */,
+				20A23734285CD652004D7301 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +75,7 @@
 			children = (
 				20539810285B7C7F00A63326 /* View */,
 				2053980E285B798700A63326 /* FoodSetting.swift */,
+				20A2373A285CD8D6004D7301 /* FoodSettingViewModel.swift */,
 			);
 			path = FoodSetting;
 			sourceTree = "<group>";
@@ -63,6 +84,32 @@
 			isa = PBXGroup;
 			children = (
 				20539811285B7C9400A63326 /* TextTrailingButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20539814285B7DA600A63326 /* AddFood */ = {
+			isa = PBXGroup;
+			children = (
+				2053981A285B7F1600A63326 /* View */,
+				20539815285B7DB400A63326 /* AddFood.swift */,
+			);
+			path = AddFood;
+			sourceTree = "<group>";
+		};
+		20539817285B7DF600A63326 /* RUI */ = {
+			isa = PBXGroup;
+			children = (
+				20539818285B7E1700A63326 /* RUIFilledTextField.swift */,
+				2053981D285B7FDE00A63326 /* RUIRoundedCornerTextButton.swift */,
+			);
+			path = RUI;
+			sourceTree = "<group>";
+		};
+		2053981A285B7F1600A63326 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2053981B285B7F2B00A63326 /* TextTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -86,12 +133,15 @@
 		2066E96A2859CC6A00097607 /* Cashier */ = {
 			isa = PBXGroup;
 			children = (
+				20A23735285CD6A3004D7301 /* Helper */,
+				20539817285B7DF600A63326 /* RUI */,
 				2066E97F2859D03000097607 /* API */,
 				2066E9822859D92E00097607 /* Model Facade */,
 				2066E97E2859D02800097607 /* Screen */,
 				2066E96B2859CC6A00097607 /* CashierApp.swift */,
 				2066E96F2859CC6A00097607 /* Assets.xcassets */,
 				2066E9762859CC6A00097607 /* Cashier.xcdatamodeld */,
+				20A2372E285CD5ED004D7301 /* GoogleService-Info.plist */,
 				2066E9712859CC6A00097607 /* Preview Content */,
 			);
 			path = Cashier;
@@ -108,6 +158,7 @@
 		2066E97E2859D02800097607 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				20539814285B7DA600A63326 /* AddFood */,
 				2053980D285B797300A63326 /* FoodSetting */,
 				2066E98A2859DC6D00097607 /* Home */,
 				2066E9802859D06A00097607 /* Main.swift */,
@@ -150,6 +201,15 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		20A23735285CD6A3004D7301 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				20A23736285CD6B0004D7301 /* AppDelegate.swift */,
+				20A23738285CD7E0004D7301 /* FirestoreReference.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +226,10 @@
 			dependencies = (
 			);
 			name = Cashier;
+			packageProductDependencies = (
+				20A23731285CD652004D7301 /* FirebaseAuth */,
+				20A23733285CD652004D7301 /* FirebaseFirestore */,
+			);
 			productName = Cashier;
 			productReference = 2066E9682859CC6A00097607 /* Cashier.app */;
 			productType = "com.apple.product-type.application";
@@ -194,6 +258,9 @@
 				Base,
 			);
 			mainGroup = 2066E95F2859CC6A00097607;
+			packageReferences = (
+				20A23730285CD652004D7301 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 2066E9692859CC6A00097607 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -210,6 +277,7 @@
 			files = (
 				2066E9732859CC6A00097607 /* Preview Assets.xcassets in Resources */,
 				2066E9702859CC6A00097607 /* Assets.xcassets in Resources */,
+				20A2372F285CD5ED004D7301 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,15 +289,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				2066E9862859D9A200097607 /* Food.swift in Sources */,
+				20A2373B285CD8D6004D7301 /* FoodSettingViewModel.swift in Sources */,
+				20A23739285CD7E0004D7301 /* FirestoreReference.swift in Sources */,
+				2053981E285B7FDE00A63326 /* RUIRoundedCornerTextButton.swift in Sources */,
+				20539816285B7DB400A63326 /* AddFood.swift in Sources */,
 				2066E9812859D06A00097607 /* Main.swift in Sources */,
 				2066E9882859D9ED00097607 /* Order.swift in Sources */,
 				2066E9752859CC6A00097607 /* Persistence.swift in Sources */,
 				2066E96E2859CC6A00097607 /* ContentView.swift in Sources */,
 				2066E96C2859CC6A00097607 /* CashierApp.swift in Sources */,
+				20A23737285CD6B0004D7301 /* AppDelegate.swift in Sources */,
 				2053980F285B798700A63326 /* FoodSetting.swift in Sources */,
+				20539819285B7E1700A63326 /* RUIFilledTextField.swift in Sources */,
 				2066E9842859D94800097607 /* AddOnItem.swift in Sources */,
 				2066E98D2859DCAD00097607 /* EarningSummary.swift in Sources */,
 				2066E9782859CC6A00097607 /* Cashier.xcdatamodeld in Sources */,
+				2053981C285B7F2B00A63326 /* TextTextField.swift in Sources */,
 				20539812285B7C9400A63326 /* TextTrailingButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,7 +447,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.weschua.Cashier;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weschua.KeensCashier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -401,7 +476,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.weschua.Cashier;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weschua.KeensCashier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -431,6 +506,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		20A23730285CD652004D7301 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		20A23731285CD652004D7301 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20A23730285CD652004D7301 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		20A23733285CD652004D7301 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20A23730285CD652004D7301 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		2066E9762859CC6A00097607 /* Cashier.xcdatamodeld */ = {
