@@ -10,6 +10,8 @@ import SwiftUI
 struct TextTextField: View {
     let title: String
     let placeholder: String = ""
+    let keyboardType: UIKeyboardType
+    
     @Binding var text: String
     
     var body: some View {
@@ -20,7 +22,9 @@ struct TextTextField: View {
             }
             .padding(.leading, 24)
             
-            RUIFilledTextField(text: .constant(""), placeholder: placeholder)
+            RUIFilledTextField(text: $text,
+                               placeholder: placeholder,
+                               keyboardType: keyboardType)
                 .padding()
                 .previewLayout(.sizeThatFits)
         }
@@ -29,6 +33,6 @@ struct TextTextField: View {
 
 struct TextTextField_Previews: PreviewProvider {
     static var previews: some View {
-        TextTextField(title: "Food Name", text: .constant(""))
+        TextTextField(title: "Food Name", keyboardType: .default, text: .constant(""))
     }
 }

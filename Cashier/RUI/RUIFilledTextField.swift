@@ -13,6 +13,7 @@ struct RUIFilledTextField: View {
     
     // MARK: - Types
     var isSecure: Bool
+    var keyboardType: UIKeyboardType
     
     // MARK: - Text
     var textColor: Color = .black
@@ -31,24 +32,28 @@ struct RUIFilledTextField: View {
          placeholder: String = "",
          textColor: Color = .black,
          topPlaceHolderFont: Font = .body,
-         isSecure: Bool = false) {
+         isSecure: Bool = false,
+         keyboardType: UIKeyboardType = .default) {
         self._text = text
         self.placeholder = placeholder
         self.textColor = textColor
         self.topPlaceHolderFont = topPlaceHolderFont
         self.isSecure = isSecure
+        self.keyboardType = keyboardType
     }
     
     var body: some View {
         HStack {
             if isSecure {
                 SecureField(placeholder, text: $text)
+                    .keyboardType(keyboardType)
                     .font(topPlaceHolderFont)
                     .padding(20)
                     .background(.white)
                     .foregroundColor(textColor)
             } else {
                 TextField(placeholder, text: $text)
+                    .keyboardType(keyboardType)
                     .font(topPlaceHolderFont)
                     .padding(20)
                     .background(.white)
