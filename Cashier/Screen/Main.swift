@@ -15,7 +15,7 @@ struct Main: View {
                     Label("Home", systemImage: "house")
                 }
             
-            ContentView()
+            Cashier()
                 .tabItem {
                     Label("Items", systemImage: "tray")
                 }
