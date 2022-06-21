@@ -21,6 +21,10 @@ struct Cashier: View {
                               keyboardType: .default,
                               text: $name)
                 
+                TextTrailingButton(title: "Orders",
+                                   action: {  })
+                .padding()
+                
                 
                 // MARK: - Payment Type
                 VStack {

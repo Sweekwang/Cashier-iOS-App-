@@ -87,7 +87,6 @@
 		20539810285B7C7F00A63326 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				20539811285B7C9400A63326 /* TextTrailingButton.swift */,
 				2089AD5A285F625C0006E05E /* FoodDetails.swift */,
 			);
 			path = View;
@@ -121,6 +120,7 @@
 		2056F5B62862130800C11D16 /* SharedView */ = {
 			isa = PBXGroup;
 			children = (
+				20539811285B7C9400A63326 /* TextTrailingButton.swift */,
 				2053981B285B7F2B00A63326 /* TextTextField.swift */,
 			);
 			path = SharedView;
