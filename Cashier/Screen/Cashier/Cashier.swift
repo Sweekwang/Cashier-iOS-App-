@@ -13,7 +13,11 @@ struct Cashier: View {
     @State var pickerSelection = 0
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
+            Text("Take Order")
+                .font(.title)
+                .bold()
+                .padding()
             ScrollView {
                 // MARK: - Customer Name
                 
@@ -23,12 +27,13 @@ struct Cashier: View {
                 
                 TextTrailingButton(title: "Orders",
                                    action: {  })
-                .padding()
                 
                 
                 // MARK: - Payment Type
-                VStack {
+                VStack(alignment: .leading)  {
                     Text("Payment Type:")
+                        .font(.title3)
+                        .bold()
                     
                     Picker(selection: $pickerSelection, content: {
                         Text("Cash").tag(0)
@@ -36,23 +41,50 @@ struct Cashier: View {
                     }, label: {
                     })
                     .pickerStyle(.segmented)
+                    .padding(.vertical)
                 }
+                .padding()
                 
                 // MARK: - Cash Paid by Customer
                 if pickerSelection == 0 {
                     TextTextField(title: "Cash Given",
                                   keyboardType: .decimalPad,
                                   text: $name)
+                    
+                    
+                    HStack{
+                        Text("Change:")
+                        Spacer()
+                        Text("$0.00")
+                    }
+                    .padding()
+                    .padding(.leading, 12)
                 }
             }
             
             // MARK: - Change and Order
             HStack{
-                VStack {
-                    Text("Total Amount:")
-                    Text("$0.00")
-                }
+
+                    VStack(alignment: .leading){
+                        Text("Total Amount:")
+                        Text("$0.00")
+                    }
+
+                    
+                
+                
+                Spacer()
+                
+                RUIRoundedCornerTextButton(text: "Make Order",
+                                           backgroundColor: .black,
+                                           textColor: .white, action: {
+                    
+                })
+                .padding(.leading)
+                
+                
             }
+            .padding()
         }
     }
 }
@@ -60,6 +92,6 @@ struct Cashier: View {
 struct Cashier_Previews: PreviewProvider {
     static var previews: some View {
         Cashier()
-            .previewInterfaceOrientation(.landscapeLeft)
+            .previewInterfaceOrientation(.portrait)
     }
 }

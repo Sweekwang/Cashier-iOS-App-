@@ -20,6 +20,7 @@ struct FoodDetails: View {
             Text("$\(String(format: "%.2f", price))")
         }
         .padding()
+        .background(.white)
     }
 }
 

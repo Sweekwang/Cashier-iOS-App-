@@ -37,8 +37,9 @@ struct FoodSetting: View {
                     }
                     
                 } header: {
-                    TextTrailingButton(title: "Main",
-                                       action: { showAddMain.toggle() })
+                        TextTrailingButton(title: "Main",
+                                           action: { showAddMain.toggle() })
+                    
                 }
                 
                 // MARK: - Add ons Section
@@ -68,6 +69,7 @@ struct FoodSetting: View {
             .listStyle(.plain)
             
         } //: NavigationView
+        .background(.red)
         .fullScreenCover(isPresented: $showAddMain,
                          content: { AddFood(title: "Add Mains", action: { name, price in
             if let id = viewmodel.documentId {
