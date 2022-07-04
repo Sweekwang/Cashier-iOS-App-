@@ -38,7 +38,9 @@ struct FoodSetting: View {
                     
                 } header: {
                         TextTrailingButton(title: "Main",
-                                           action: { showAddMain.toggle() })
+                                           action: {
+                            viewmodel.clearField()
+                            showAddMain.toggle() })
                     
                 }
                 
@@ -90,6 +92,7 @@ struct FoodSetting: View {
             viewmodel.readMain()
             viewmodel.readAddOns()
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

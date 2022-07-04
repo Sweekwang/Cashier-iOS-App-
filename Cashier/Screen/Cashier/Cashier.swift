@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import SwiftRUI
 
 struct Cashier: View {
     @State var name = ""
     @State var cashPaid = ""
     @State var pickerSelection = 0
+    @StateObject var cashierViewModel = CashierViewModel()
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -26,7 +28,9 @@ struct Cashier: View {
                               text: $name)
                 
                 TextTrailingButton(title: "Orders",
-                                   action: {  })
+                                   action: {
+                    cashierViewModel.showOrderView.toggle()
+                })
                 
                 
                 // MARK: - Payment Type
@@ -64,14 +68,13 @@ struct Cashier: View {
             
             // MARK: - Change and Order
             HStack{
-
-                    VStack(alignment: .leading){
-                        Text("Total Amount:")
-                        Text("$0.00")
-                    }
-
-                    
                 
+                VStack(alignment: .leading){
+                    Text("Total Amount:")
+                    Text("$0.00")
+                }
+                
+
                 
                 Spacer()
                 
@@ -85,6 +88,12 @@ struct Cashier: View {
                 
             }
             .padding()
+            .onAppear {
+                cashierViewModel.getFood()
+            }
+            .sheet(isPresented: $cashierViewModel.showOrderView) {
+                Text("Hello")
+            }
         }
     }
 }

@@ -21,6 +21,12 @@ class FoodSettingViewModel: ObservableObject {
     var price: Double? = nil
     var documentId: String? = nil
     
+    func clearField() {
+        name = nil
+        price = nil
+        documentId = nil
+    }
+    
 }
 
 // MARK: - Firebase
