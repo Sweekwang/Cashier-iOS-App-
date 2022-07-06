@@ -92,7 +92,7 @@ struct Cashier: View {
                 cashierViewModel.getFood()
             }
             .sheet(isPresented: $cashierViewModel.showOrderView) {
-                Text("Hello")
+                OrderView(main: cashierViewModel.main, addOns: cashierViewModel.addOns)
             }
         }
     }
