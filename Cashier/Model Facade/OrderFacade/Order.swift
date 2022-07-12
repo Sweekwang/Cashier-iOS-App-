@@ -8,9 +8,6 @@
 import Foundation
 
 struct Order {
-    var datetime: Date
     var kitchStatus: Bool
-    var saladBarStatus: Bool
-    var orderStatus: Bool
     var foods: [Food]
 }

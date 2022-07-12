@@ -27,10 +27,18 @@ struct Cashier: View {
                               keyboardType: .default,
                               text: $name)
                 
+                TextTextField(title: "Phone Number",
+                              keyboardType: .default,
+                              text: $name)
+                
                 TextTrailingButton(title: "Orders",
                                    action: {
                     cashierViewModel.showOrderView.toggle()
                 })
+
+                ForEach(cashierViewModel.orders) { food in
+                    OrderTab(food: food, btnText: "Delete Order", actionButton: {})
+                }
                 
                 
                 // MARK: - Payment Type
@@ -42,6 +50,7 @@ struct Cashier: View {
                     Picker(selection: $pickerSelection, content: {
                         Text("Cash").tag(0)
                         Text("Grab Pay").tag(1)
+                        Text("PayLah Pay").tag(1)
                     }, label: {
                     })
                     .pickerStyle(.segmented)
@@ -74,7 +83,7 @@ struct Cashier: View {
                     Text("$0.00")
                 }
                 
-
+                
                 
                 Spacer()
                 
@@ -92,8 +101,13 @@ struct Cashier: View {
                 cashierViewModel.getFood()
             }
             .sheet(isPresented: $cashierViewModel.showOrderView) {
-                OrderView(main: cashierViewModel.main, addOns: cashierViewModel.addOns)
+                OrderView(main: cashierViewModel.main, addOns: cashierViewModel.addOns, sendorder: { food in
+                    print("called")
+                    cashierViewModel.addFood(order: food)
+                })
             }
+        }.onTapGesture(count: 2) {
+            UIApplication.shared.endEditing()
         }
     }
 }

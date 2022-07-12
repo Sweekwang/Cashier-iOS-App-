@@ -7,9 +7,12 @@
 
 import Foundation
 
-struct Food {
+struct Food: Identifiable {
+    var id: String = UUID().uuidString
+    
     var name: String
     var price: Double
-    var addOns: [AddOnItem]
+    var addOns: [String: [String: Double]]
     var totalPrice: Double
+    var description: String?
 }

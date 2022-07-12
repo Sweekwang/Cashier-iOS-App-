@@ -12,6 +12,7 @@ class CashierViewModel: ObservableObject {
     @Published var name = ""
     @Published var cashPaid = ""
     @Published var pickerSelection = 0
+    @Published var orders = [Food]()
     
     @Published var showOrderView = false
     
@@ -19,6 +20,11 @@ class CashierViewModel: ObservableObject {
     @Published var isLoadingAddOns = true
     var main: [MainFood] = [MainFood]()
     var addOns: [AddOnItem] = [AddOnItem]()
+    
+    func addFood(order: Food) {
+        orders.append(order)
+        objectWillChange.send()
+    }
 }
 
 

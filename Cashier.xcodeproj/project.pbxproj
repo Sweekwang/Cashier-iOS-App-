@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2002C162286A06D0002E6232 /* SwiftRUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2002C161286A06D0002E6232 /* SwiftRUI */; };
+		20117553287994E5008D473F /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20117552287994E5008D473F /* OrderViewModel.swift */; };
 		2053980F285B798700A63326 /* FoodSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2053980E285B798700A63326 /* FoodSetting.swift */; };
 		20539812285B7C9400A63326 /* TextTrailingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20539811285B7C9400A63326 /* TextTrailingButton.swift */; };
 		20539816285B7DB400A63326 /* AddFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20539815285B7DB400A63326 /* AddFood.swift */; };
@@ -24,6 +25,7 @@
 		2066E9862859D9A200097607 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066E9852859D9A200097607 /* Food.swift */; };
 		2066E9882859D9ED00097607 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066E9872859D9ED00097607 /* Order.swift */; };
 		2066E98D2859DCAD00097607 /* EarningSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066E98C2859DCAD00097607 /* EarningSummary.swift */; };
+		206ED34228798A840066A636 /* AddOnsSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206ED34128798A840066A636 /* AddOnsSelection.swift */; };
 		2089AD5B285F625C0006E05E /* FoodDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2089AD5A285F625C0006E05E /* FoodDetails.swift */; };
 		20A2372F285CD5ED004D7301 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20A2372E285CD5ED004D7301 /* GoogleService-Info.plist */; };
 		20A23732285CD652004D7301 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 20A23731285CD652004D7301 /* FirebaseAuth */; };
@@ -35,9 +37,11 @@
 		20D1C1C92875C6E600A955B9 /* MainFoodSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D1C1C82875C6E600A955B9 /* MainFoodSelection.swift */; };
 		20F3FD8A28731679006980C2 /* RUIFilledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F3FD8928731679006980C2 /* RUIFilledTextField.swift */; };
 		20F3FD8D28731901006980C2 /* CashierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F3FD8C28731901006980C2 /* CashierViewModel.swift */; };
+		20F74C20287D9DA100CB277D /* OrderTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F74C1F287D9DA100CB277D /* OrderTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20117552287994E5008D473F /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 		2053980E285B798700A63326 /* FoodSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSetting.swift; sourceTree = "<group>"; };
 		20539811285B7C9400A63326 /* TextTrailingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTrailingButton.swift; sourceTree = "<group>"; };
 		20539815285B7DB400A63326 /* AddFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFood.swift; sourceTree = "<group>"; };
@@ -55,6 +59,7 @@
 		2066E9852859D9A200097607 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		2066E9872859D9ED00097607 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		2066E98C2859DCAD00097607 /* EarningSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningSummary.swift; sourceTree = "<group>"; };
+		206ED34128798A840066A636 /* AddOnsSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOnsSelection.swift; sourceTree = "<group>"; };
 		2089AD5A285F625C0006E05E /* FoodDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetails.swift; sourceTree = "<group>"; };
 		20A2372E285CD5ED004D7301 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		20A23736285CD6B0004D7301 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +69,7 @@
 		20D1C1C82875C6E600A955B9 /* MainFoodSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFoodSelection.swift; sourceTree = "<group>"; };
 		20F3FD8928731679006980C2 /* RUIFilledTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RUIFilledTextField.swift; sourceTree = "<group>"; };
 		20F3FD8C28731901006980C2 /* CashierViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashierViewModel.swift; sourceTree = "<group>"; };
+		20F74C1F287D9DA100CB277D /* OrderTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 		2056F5B3286210BC00C11D16 /* Cashier */ = {
 			isa = PBXGroup;
 			children = (
+				20F74C1E287D9D8C00CB277D /* View */,
 				20F3FD8B28731885006980C2 /* Order */,
 				2056F5B4286210DF00C11D16 /* Cashier.swift */,
 				20F3FD8C28731901006980C2 /* CashierViewModel.swift */,
@@ -236,8 +243,18 @@
 			children = (
 				20D1C1C62875C39E00A955B9 /* OrderView.swift */,
 				20D1C1C82875C6E600A955B9 /* MainFoodSelection.swift */,
+				206ED34128798A840066A636 /* AddOnsSelection.swift */,
+				20117552287994E5008D473F /* OrderViewModel.swift */,
 			);
 			path = Order;
+			sourceTree = "<group>";
+		};
+		20F74C1E287D9D8C00CB277D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20F74C1F287D9DA100CB277D /* OrderTab.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +340,7 @@
 				2066E9862859D9A200097607 /* Food.swift in Sources */,
 				20A2373B285CD8D6004D7301 /* FoodSettingViewModel.swift in Sources */,
 				20F3FD8A28731679006980C2 /* RUIFilledTextField.swift in Sources */,
+				20F74C20287D9DA100CB277D /* OrderTab.swift in Sources */,
 				20D1C1C92875C6E600A955B9 /* MainFoodSelection.swift in Sources */,
 				20A23739285CD7E0004D7301 /* FirestoreReference.swift in Sources */,
 				20F3FD8D28731901006980C2 /* CashierViewModel.swift in Sources */,
@@ -335,7 +353,9 @@
 				2066E96C2859CC6A00097607 /* CashierApp.swift in Sources */,
 				2089AD5B285F625C0006E05E /* FoodDetails.swift in Sources */,
 				20A23737285CD6B0004D7301 /* AppDelegate.swift in Sources */,
+				20117553287994E5008D473F /* OrderViewModel.swift in Sources */,
 				2053980F285B798700A63326 /* FoodSetting.swift in Sources */,
+				206ED34228798A840066A636 /* AddOnsSelection.swift in Sources */,
 				2066E9842859D94800097607 /* AddOnItem.swift in Sources */,
 				2066E98D2859DCAD00097607 /* EarningSummary.swift in Sources */,
 				2066E9782859CC6A00097607 /* Cashier.xcdatamodeld in Sources */,
