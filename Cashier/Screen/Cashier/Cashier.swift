@@ -62,13 +62,13 @@ struct Cashier: View {
                 if pickerSelection == 0 {
                     TextTextField(title: "Cash Given",
                                   keyboardType: .decimalPad,
-                                  text: $name)
+                                  text: $cashierViewModel.cashPaid)
                     
                     
                     HStack{
                         Text("Change:")
                         Spacer()
-                        Text("$0.00")
+                        Text("$\(String(format: "%.2f", cashierViewModel.changes))")
                     }
                     .padding()
                     .padding(.leading, 12)
@@ -80,7 +80,7 @@ struct Cashier: View {
                 
                 VStack(alignment: .leading){
                     Text("Total Amount:")
-                    Text("$0.00")
+                    Text("$\(String(format: "%.2f", cashierViewModel.totalCost))")
                 }
                 
                 

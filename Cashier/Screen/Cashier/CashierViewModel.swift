@@ -21,6 +21,18 @@ class CashierViewModel: ObservableObject {
     var main: [MainFood] = [MainFood]()
     var addOns: [AddOnItem] = [AddOnItem]()
     
+    var totalCost: Double {
+        orders.reduce(0) { partialResult, food in
+            return partialResult + food.totalPrice
+        }
+    }
+    
+    var changes: Double {
+        guard let cash = Double(cashPaid) else { return 0 }
+        
+        return Double(cash) - totalCost
+    }
+    
     func addFood(order: Food) {
         orders.append(order)
         objectWillChange.send()
@@ -70,3 +82,28 @@ extension CashierViewModel {
 }
 
 // MARK: - Cashier
+extension CashierViewModel {
+    func sendOrder() {
+        defer { clearOrder() }
+        
+        guard name != "",
+              orders.count > 0 else { return }
+        
+        if pickerSelection == 0 && cashPaid == "" {
+            return
+        }
+        
+        
+        
+        // TODO: Add to DB
+        
+        
+    }
+    
+    private func clearOrder() {
+        name = ""
+        cashPaid = ""
+        pickerSelection = 0
+        orders = [Food]()
+    }
+}
